@@ -79,7 +79,7 @@ describe("Create Statement Controller", () => {
       .post("/api/v1/statements/withdraw")
       .send({
         amount: 50,
-        description: "test desc",
+        description: "test desc1",
       })
       .set({
         Authorization: `Bearer ${token}`,

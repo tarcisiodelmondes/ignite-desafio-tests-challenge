@@ -47,9 +47,9 @@ describe("Create Statement UseCase", () => {
       password: "test1234",
     };
 
-    expect(async () => {
-      const userCreated = await createUseUseCase.execute(user);
+    const userCreated = await createUseUseCase.execute(user);
 
+    expect(async () => {
       await createStatementUseCase.execute({
         user_id: userCreated.id as string,
         amount: 1000,
